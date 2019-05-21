@@ -17,7 +17,8 @@ class CreateAttendanceTable extends Migration
             $table->increments('id');
              $table->string('attendance_status');
              $table->date('date');
-             $table->time('time')->nullable();
+             $table->time('time_from')->nullable();
+             $table->time('time_to')->nullable();
               $table->integer('user_id')->unsigned();
             $table->foreign('user_id')
                   ->references('id')->on('users')

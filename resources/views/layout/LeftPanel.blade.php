@@ -12,7 +12,11 @@
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a href="/Users"> <i class="menu-icon fa fa-dashboard"></i>Users </a>
+                        <a href="/Employees"> <i class="menu-icon fa fa-dashboard"></i>Employees </a>
+                    </li>
+
+                    <li class="active">
+                        <a href="/Attendance"> <i class="menu-icon fa fa-dashboard"></i>Attendance Funcation </a>
                     </li>
                    <!--  <h3 class="menu-title">Pages</h3><!-- /.menu-title --> -->
 
