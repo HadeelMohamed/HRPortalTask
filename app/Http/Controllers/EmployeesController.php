@@ -89,15 +89,21 @@ public function attendedform(Request $request)
 
 {
    
+ $difference = strtotime($request->time_to) - strtotime($request->time_from);
+ $total_time=($difference/60)/60;
+
   $attenddata = [
                     'user_id' => $request->employee_id,
                     'attendance_status' => $request->status,
                     'date' => $request->date,
                     'time_from'=>$request->time_from,
-                    'time_to' => $request->time_to];
+                    'time_to' => $request->time_to,
+                    'total_time' =>$total_time,
+                  ];
             
-                $attend = new Attendance;
+                           $attend = new Attendance;
                 $attend=Attendance::create($attenddata);
+               
                 return redirect('/Attendance');
 }
 }

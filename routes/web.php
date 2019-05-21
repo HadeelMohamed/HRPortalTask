@@ -42,3 +42,7 @@ Route::any('/attendedform', 'EmployeesController@attendedform')->name('attendedf
 Route::get('/DateReport', 'ReportController@showdatereport');
 Route::any('/datareportform', 'ReportController@datareportform')->name('datareportform');
 
+
+///Employee Of The month
+
+Route::get('/EmployeeOfTheMonth', 'ReportController@EmployeeOfTheMonth');

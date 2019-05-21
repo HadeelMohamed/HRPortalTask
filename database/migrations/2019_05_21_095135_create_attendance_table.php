@@ -19,6 +19,7 @@ class CreateAttendanceTable extends Migration
              $table->date('date');
              $table->time('time_from')->nullable();
              $table->time('time_to')->nullable();
+             $table->double('total_time')->nullable();
               $table->integer('user_id')->unsigned();
             $table->foreign('user_id')
                   ->references('id')->on('users')

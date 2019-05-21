@@ -38,12 +38,7 @@
                         <th>Name</th>
                          <th>Date</th>
                          <th>Time From</th>
-                          <th>Time To</th>
-                          
-                          
-
-                      
-
+                        <th>Time To</th> 
                       </tr>
                     </thead>
                     <tbody>
