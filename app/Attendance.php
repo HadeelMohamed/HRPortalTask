@@ -8,4 +8,10 @@ class Attendance extends Model
  protected $fillable = [
         'user_id', 'attendance_status', 'time_from','time_to','date'
     ];
+
+
+    public function getemployee()
+    {
+        return $this->belongsTo('App\User','user_id');
+    }
 }

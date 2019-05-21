@@ -41,14 +41,14 @@
 
         <!-- LeftPanel -->
 
-   @include('layout.LeftPanel')
+   @include('layout.leftPanel')
 
     <!-- Left Panel -->
 
     <!-- RightPanel -->
     <div id="right-panel" class="right-panel">
 
-    @include('layout.RightPanel')
+    @include('layout.rightPanel')
 
     @yield('content')
 </div>

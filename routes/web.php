@@ -33,8 +33,12 @@ Route::any('/editemp', 'EmployeesController@editemp')->name('editemp');
 //addemployee
 Route::any('/employeesstore', 'EmployeesController@employeesstore')->name('employeesstore');
 //attendance
-
 Route::get('/Attendance', 'EmployeesController@showattendance');
-
-
 Route::any('/attendedform', 'EmployeesController@attendedform')->name('attendedform');
+
+
+///Date Report
+
+Route::get('/DateReport', 'ReportController@showdatereport');
+Route::any('/datareportform', 'ReportController@datareportform')->name('datareportform');
+

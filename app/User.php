@@ -30,6 +30,6 @@ class User extends Authenticatable
 
      public function attendance()
     {
-        return $this->hasMany('App\Attendance','user_id');
+        return $this->hasMany('App\Attendance');
     }
 }

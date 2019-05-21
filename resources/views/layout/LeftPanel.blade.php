@@ -18,6 +18,11 @@
                     <li class="active">
                         <a href="/Attendance"> <i class="menu-icon fa fa-dashboard"></i>Attendance Funcation </a>
                     </li>
+
+
+                    <li class="active">
+                        <a href="/DateReport"> <i class="menu-icon fa fa-dashboard"></i>Date Report </a>
+                    </li>
                    <!--  <h3 class="menu-title">Pages</h3><!-- /.menu-title --> -->
 
                   
