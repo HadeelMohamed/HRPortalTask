@@ -11,6 +11,13 @@
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('/login');
 });
+
+///loginroutes
+Route::any('/authenticate', 'LoginController@authenticate')->name('authenticate');
